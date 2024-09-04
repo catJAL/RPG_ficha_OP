@@ -13,12 +13,13 @@
         <h1>Ficha do personagem</h1>
     </header>
     <main>
+        <img src="src/ordo_realitas.png" alt="" class="ordo-img">
         <section class="borda-ficha">
             <section class="flex-boxH">
                 <article class="nome">
                     <div class="nome-tit">
-                        <h3>Personagem</h3>
-                        <h3>Jogador</h3>
+                        <h2>Personagem</h2>
+                        <h2>Jogador</h2>
                     </div>
                     <div class="nome-pree">
                         <p class="nome-per">[_______________]</p>
@@ -52,7 +53,7 @@
                         <div class="peri-list">
                             <div class="peri-col1"><p>Adestramento</p></div>
                             <div class="peri-col"><p>[___]</p></div>
-                            <div class="peri-col"><p>[___]</p></div>
+                            <div class="peri-col"><p>[+__]</p></div>
                             <div class="peri-col"><p>[___]</p></div>
                             <div class="peri-col"><p>[___]</p></div>
                         </div>
@@ -235,24 +236,28 @@
             </section>
                 <article class="info-per">
                     <div class="origem">
-                        <h3></h3>
+                        <h3>Origem</h3>
                         <div class="orig-pree"></div>
                     </div>
 
                     <div class="classe">
-                        <h3></h3>
+                        <h3>Classe</h3>
                         <div class="class-pree"></div>
                     </div>
 
                     <div class="flex-boxH">
                         <div class="nex">
-                            <h3></h3>
-                            <div class="nex-pree"></div>
+                            <h3>Nex</h3>
+                            <div class="nex-pree"><p class="nex-porc">%</p></div>
+                            <div class="flex-boxV">
+                                <h3 class="mini">pe/</h3>
+                                <h3 class="mini">rodada</h3>
+                            </div>
                             <div class="pe-rodada"></div>
                         </div>
     
                         <div class="deslo">
-                            <h3></h3>
+                            <h3>Desloc.</h3>
                             <div class="deslo-pree"></div>
                         </div>
                     </div>
@@ -260,19 +265,19 @@
                     <div class="flex-boxH">
                         <div class="ponto-vida">
                             <div class="pv-pree"></div>
-                            <h3></h3>
+                            <h3>PV</h3>
                             <div class="flex-boxV">
-                                <p></p>
-                                <p></p>
+                                <p class="mini">Pontos</p>
+                                <p class="mini">de Vida</p>
                             </div>
                         </div>
     
                         <div class="ponto-esforco">
                             <div class="pe-pree"></div>
-                            <h3></h3>
+                            <h3>PE</h3>
                             <div class="flex-boxV">
-                                <p></p>
-                                <p></p>
+                                <p class="mini">Pontos de</p>
+                                <p class="mini">Esforço</p>
                             </div>
                         </div>
                     </div>
@@ -281,23 +286,26 @@
                         <div class="defesa">
                             <div class="def-pree"></div>
                             <div class="flex-boxV">
-                                <h3></h3>
-                                <p></p>
+                                <h3>Defesa</h3>
+                                <p class="calc">= 10 + AGI + __ + __</p>
                             </div>
                         </div>
     
                         <div class="sanidade">
                             <div class="san-pree"></div>
-                            <h3></h3>
-                            <p></p>
+                            <div class="flex-boxV">
+                                <h3>SAN</h3>
+                                <p class="mini">Sanidade</p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="prot-resis">
-                        <p></p>
-                        <p></p>
+                        <p>Proteção: ________________________________________</p>
+                        <p>Ressistências: ____________________________________</p>
                     </div>
                 </article>
+
                 <article class="ataques">
 
                 </article>

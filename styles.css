@@ -13,15 +13,27 @@ header {
 }
 
 main {
-    background-color: #dddddd;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
     height: 1500px;
     width: 950px;
     margin: 0 auto;
     border-radius: 30px;
-    padding-top: 15px;
+    padding-top: 15px
 }
 
-.borda-ficha{
+.ordo-img {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+}
+
+.borda-ficha {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -31,11 +43,19 @@ main {
     border: 5px solid black;
     border-radius: 5px;
     padding: 5px;
+    position: relative;
 }
 
 .flex-boxH {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
+}
+
+.flex-boxV {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .nome {
@@ -79,7 +99,7 @@ main {
 
 .atributos {
     /* background-color: #ffff00; */
-    margin-top: -65px;
+    margin-top: -45px;
     height: 520px;
     width: 460px;
 }
@@ -87,6 +107,7 @@ main {
 .atributos img {
     height: 520px;
     width: 460px;
+    margin-left: -10px
 }
 
 .pericias {
@@ -140,6 +161,9 @@ main {
 }
 
 .origem {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     background-color: black;
     border-radius: 10px;
     height: 35px;
@@ -148,6 +172,9 @@ main {
 }
 
 .classe {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     background-color: black;
     border-radius: 10px;
     height: 35px;
@@ -156,6 +183,9 @@ main {
 }
 
 .nex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     background-color: black;
     border-radius: 10px;
     height: 35px;
@@ -164,6 +194,9 @@ main {
 }
 
 .deslo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     background-color: black;
     border-radius: 10px;
     height: 35px;
@@ -172,6 +205,9 @@ main {
 }
 
 .ponto-vida {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     background-color: black;
     border-radius: 10px;
     height: 45px;
@@ -180,6 +216,9 @@ main {
 }
 
 .ponto-esforco {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     background-color: black;
     border-radius: 10px;
     height: 45px;
@@ -188,27 +227,131 @@ main {
 }
 
 .defesa {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     background-color: black;
     border-radius: 10px;
     height: 35px;
-    width: 220px;
+    width: 250px;
     margin: 22.5px -5px;
 }
 
 .sanidade {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     background-color: black;
     border-radius: 10px;
     height: 45px;
-    width: 220px;
+    width: 190px;
     margin: 22.5px 5px;
 }
 
 .prot-resis {
-    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: black;
     border-radius: 10px;
-    height: 40px;
-    width: 450px;
+    height: 60px;
+    width: 430px;
+    padding: 5px;
     margin: 22.5px 0;
+}
+
+.orig-pree {
+    background-color: white;
+    border: 2px solid black;
+    height: 45px;
+    width: 300px;
+    margin-top: -5px;
+}
+
+.class-pree {
+    background-color: white;
+    border: 2px solid black;
+    height: 45px;
+    width: 300px;
+    margin-top: -5px;
+}
+
+.nex-pree {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    border: 2px solid black;
+    height: 45px;
+    width: 60px;
+    margin-top: -5px;
+}
+
+.nex-porc {
+    font-size: 25px;
+    margin: auto 0;
+}
+
+.pe-rodada {
+    background-color: white;
+    border: 2px solid black;
+    height: 45px;
+    width: 50px;
+    margin-top: -5px;
+}
+
+.deslo-pree {
+    background-color: white;
+    border: 2px solid black;
+    height: 45px;
+    width: 90px;
+    margin-top: -5px
+}
+
+.pv-pree {
+    background-color: white;
+    border: 2px solid black;
+    height: 55px;
+    width: 70px;
+    margin-top: -5px;
+}
+
+.pe-pree {
+    background-color: white;
+    border: 2px solid black;
+    height: 55px;
+    width: 65px;
+    margin-top: -5px;
+}
+
+.def-pree {
+    background-color: white;
+    border: 3px solid black;
+    height: 60px;
+    width: 70px;
+    margin-top: -5px;
+}
+
+.san-pree {
+    background-color: white;
+    border: 2px solid black;
+    height: 55px;
+    width: 60px;
+    margin-top: -5px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    margin: auto 0;
+}
+
+.mini {
+    font-size: 15px;
+    color: white;
+}
+
+.calc {
+    margin-top: 10px;
 }
 
 .ataques {
